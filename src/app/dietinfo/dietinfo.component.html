@@ -1,0 +1,43 @@
+<div *ngIf="dietInfo" class="container">
+  <h1>Embrace a Healthy Diet & Lifestyle</h1>
+
+  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Healthy Food" />
+
+  <p class="description">
+    A healthy diet is the cornerstone of a vibrant life. It fuels your body with essential nutrients,
+    boosts your immune system, and helps maintain a healthy weight. Incorporating a variety of fruits,
+    vegetables, whole grains, lean proteins, and healthy fats can significantly reduce the risk of chronic
+    diseases such as heart disease, diabetes, and obesity.
+
+    Beyond physical health, a balanced diet also supports mental well-being. Nutrient-rich foods like leafy
+    greens, berries, nuts, and fish are known to enhance brain function and mood. Staying hydrated, limiting
+    processed foods, and practicing mindful eating are simple yet powerful steps toward a healthier you.
+
+    Remember, a healthy lifestyle isn't about strict limitations or depriving yourself. It's about feeling
+    great, having more energy, and improving your overall quality of life. Start small, stay consistent,
+    and celebrate every step toward a healthier you!
+  </p>
+
+  <button (click)="showEnrolled()" class="btn">See How Many People Joined</button>
+  <!-- <div *ngIf="enrolledCount" class="enrolled">
+    🎉 {{ enrolledCount }} people have already joined the healthy diet journey!
+  </div> -->
+</div>
+
+<div *ngIf="showAllUser">
+ <div class="container mt-4">
+      <h3 style="text-align: center;">List of User Entrolled for Diet</h3>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col" *ngFor="let user of Userinfo">
+      <div class="card shadow-sm border-0 h-100" style="background: linear-gradient(135deg, #f8f9fa, #e3f2fd);">
+        <div class="card-body">
+          <h4 class="card-title text-primary">{{ user.firstname }} {{ user.lastname }}</h4>
+          <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+          <p class="card-text"><strong>Age:</strong> {{ user.age }}</p>
+          <p class="card-text"><strong>Date & Time:</strong> {{ user.datetime}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

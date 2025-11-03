@@ -1,0 +1,57 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0fff0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e68900;
+}
+
+.enrolled {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 1.2em;
+  text-align: center;
+}
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
